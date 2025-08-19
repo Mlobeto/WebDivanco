@@ -6,6 +6,7 @@ const env = process.env.NODE_ENV || 'development';
 
 let sequelize;
 if (env === 'production' && process.env.DB_DEPLOY) {
+  console.log(process.env.DB_DEPLOY)
   sequelize = new Sequelize(process.env.DB_DEPLOY, {
     // ✅ CAMBIO: Habilitar logging en desarrollo para debugging
     logging: env === 'development' ? (sql, timing) => {
