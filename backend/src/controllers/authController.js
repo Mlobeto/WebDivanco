@@ -1,3 +1,6 @@
+import User from '../data/models/User.js';
+import bcrypt from 'bcryptjs';
+
 export const resetPassword = async (req, res, next) => {
   try {
     const { token, password } = req.body;
