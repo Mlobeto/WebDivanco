@@ -12,7 +12,7 @@ import MediaFile from './MediaFile.js';
 // Importar y ejecutar asociaciones
 import { defineAssociations } from './associations.js';
 
-// Definir las asociaciones
+
 defineAssociations();
 
 // Exportar todo
