@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon, MagnifyingGlassIcon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
 import { useAuth } from '../../../hooks';
-import logoCompleto from '../../../assets/images/DIVANCOHV3.png';
+import logoCompleto from '../../../assets/images/logocompleto.png';
 import { useGetRecentProjectsQuery } from '../../../features/projects/projectsApi';
 import { useGetRecentBlogPostsQuery } from '../../../features/blog/blogApi';
 
