@@ -55,7 +55,7 @@ export const recoverPassword = async (req, res, next) => {
       throw err;
     }
     
-    // Generar token simple (en producción usar JWT o UUID)
+
     const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, { expiresIn: '1h' });
     await sendPasswordRecoveryMail(user.email, token);
     res.json({ message: 'Recovery email sent' });
