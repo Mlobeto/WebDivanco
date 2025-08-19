@@ -6,7 +6,7 @@ import logoCompleto from '../../../assets/images/logocompleto.png';
 import { useGetRecentProjectsQuery } from '../../../features/projects/projectsApi';
 import { useGetRecentBlogPostsQuery } from '../../../features/blog/blogApi';
 
-
+////////////////////////////////////
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [clickCount, setClickCount] = useState(0);
